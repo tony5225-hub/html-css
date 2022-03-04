@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+  <h1>Usando links externos</h1> 
+  <p>Voce pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositórios público no Github</a></p><!--ESSE "a" FOI COLOCADO COM FAMOSO ENVELOPAR CTRL+shift+p E DEPOIS FOI DIGITADO O A QUE APARECE HREF e o target e external servem para que o link abra e não perca o site 02/02/2021-->
+  <p>Voce também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no you tube</a></p><!--tabem pode digitar direto a que aparece href para digitar o link-->
+  <h1>Usando links internos</h1>
+  <p>Esta é a primeira pagina do site. se voce quiser, pode acessar também a minha <a href="pag002.html"rel="next"target="_self">Segunda página</a></p><!--Obs onde a parece pag002.html a href para achar qual item quer didita ctrl e espaço o visul studio te mostra E next eh para Google encontrar no codigo a proxima pagina.-->
+  <p>Voce também pode acessar a nossa <a href="noticias/pag003.html"rel="next" target="_self">página de noticias</a> </p><!--Obs onde aparece a pasta noticias/pag003.html para que a pag003  apareça eh necessário com ctrl+espaço e depois clicar em pag003 para ficar noticias/pag003 senão aparece na pagina google como erro OUTRA OBS: a target _self serve para manter na mesma pagina as trocas de links -->
+  <h1>links para download</h1>
+  <ul>
+    <li><a href="livro/meulivro.pdf" download="meulivro.pdf"type="application/pdf">Baixar o livro em pdf</a></li><!--site para procurar todos os media type tipo se for por pdf no site se digitar no site ctrl+f e digitar pdf ou zip mas isso tem que ser no chrome:https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    <li><a href="livro/meulivro.zip"download="meulivro.zip"type="application/zip">Livro compactado em zip</a></li>
+  </ul>
+  </body>
+</html>

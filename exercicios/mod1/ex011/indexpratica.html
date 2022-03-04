@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica </h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente ou diminua o tamanho do seu navegador </p>
+    <picture><!--essa tag picture parece uma imagem  permite que vc crie vários escolhas e fontes neste caso o guanabara vai explicar pela foto G essa foto vai servir para vc sincronizar com site para não ter ficar rolando na barra de rolagem e não ficar um site ruim para usuário ver : agora vamos criar uma tag chamada Source midia type neste caso sugere a largura minima como vai ser utilizada a imagem grande vai utilizar a maxima por que possui o tamanho 1050px para que o navegador não tenha problema para carregar essa imagem que tem 1050px no caso ele colocou a imagem m média que o site vai carregar pq não vai estourar o máximo de 1000px OBS A ORDEM DAS IMAGENS COLOCADAS NO SOURCE É IMPORTANTE POIS SE COLOCAR MAIOR EM CIMA E MENOR EMBAIXO PODE INFLUENCIAR NA MOVIMENTAÇÃO DA IMAGEM-->
+        <source media="(max-width: 750px )" srcset="imagenspratica/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagenspratica/foto-m.png" type="image/png">
+        <img src="imagenspratica/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Vamos aprender a reproduzir áudio em html5</h1>
+    
+    <!--<audio src="midia/happy-mistake.mp3" controls autoplay></audio> /para adicionar o audio digita o audio e digita auoplay e controls par exibir no navegador pode ser utilizado o Mp3, WAV e OGG que vai ser demonstrado em outro exemplo-->
+
+    <!--<audio preload="metadata" autoplay controls loop >  esta outro exemplo de colocar para baixar audio lembrando que na ordem que esta será carregado primeiro mp3 senão o ogg e depois o wav embaixo colocou um parágrafo se nenhum desses treis carregou a informação e lembrando NÃO COLOQUE AUDIO WAVPOIS ELES SÃO MUITO GRANDE PARA REPRODUÇÃO COLOCADO AQUI PARA CONHECIMEDNTO OS ARQUIVOS MP3 E OGG AJUDAM NA VISUALIZAÇÃO E NAVEGAÇÃO DO SITE  OBS: NO METADATA COLOCADO ACIMA ELE CARREGA DURAÇÃO  ARQUIVO DO AUDIO E DO LADO AUTOPLAY VAI TOCAR O AUDIO E O CONTROLS MOSTRAR OS CONTROLES DO 
+    AUDIO : O LOOP ELE no final do audio ele retorna para começo -->
+       <source src="midia/happy-mistake.mp3" type="audio/mpeg"> 
+       <source src="midia/guanacast-33.ogg" type="midia/ogg">
+       <source src="midia/guanacast-33.wav" type="midia/wav">
+    </audio>
+    <p> Infelizmente seu navegador não foi compativel para baixar esses audios acima <a href="midia/guanacast-33.mp3"></a>Clique aqui para baixar o audio </p>
+
+</body>
+</html>

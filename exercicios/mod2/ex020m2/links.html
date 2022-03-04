@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /* aprendemos que nas CSS esses simbolos são para criar SELETORES PERSONALIZADOS  # = id, .= class, : = pseudo-class, :: = pseudo-element, > = Child(filho)  */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        a {
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+            /* text-decoration para tirar o sublinhado que fica escrito embaixo e em negrito font-weight: bold; veja no navegador */
+        }
+        a:visited {
+            color: darkred;
+        } 
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            /* color: black;quando passa o mouse emcima fica preto e text-decoration: underline; para quando passar o mouse emcima do texto aparecer underline embaixo  */
+        }
+        a:active{
+            color: chartreuse;
+            /* a:active{
+            color: chartreuse; quando  for clicado o link muda para essa cor depois de clicado ele abre o site se segurar o mouse ele mostra a cor */
+        }
+        .especial{
+            background-color: rgb(206, 147, 147);
+         
+
+        }
+        .especial::before{
+            content: '[⇒]' ;
+            text-decoration: none;
+            font-weight: normal ;
+            color:rgb(201, 47, 47);
+                     
+            /* a::after esses dois pontos representa  pseudo elementos esse link é para copiar simbolos especiais: https://erikasarti.com/html/dingbats-simbolos-desenhos/ */
+        }
+        .especial::after{
+            content: '[⇐]';
+            text-decoration: none;
+            font-weight: normal ;
+            color:rgb(201, 47, 47);
+
+}
+            
+        
+            </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li><a href="https://gustavoguanabara.github.io " target="_blank" >Repositório Gihub</a></li> <!--como ja visto nas aulas links o target="_blank" serve para abrir o link em outra aba -->
+    <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do You tube</a></li><!--como ja visto nas aulas links o target="_blank" serve para abrir o link em outra aba/ OBS: ONDE APARECE CLASS o link vai ser formatado diferente no navegador só ele vai aparecer com ⇒ ⇐ veja acima neste exemplo .especial::before{
+        content: '[⇒]' ; .especial::after{
+            content: '[⇐]'; e veja no navegado só link do you tube fica assim.-->
+    <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do cursoemvideo</a></li><!--como ja visto nas aulas links o target="_blank" serve para abrir o link em outra aba -->
+    
+</body>
+</html>

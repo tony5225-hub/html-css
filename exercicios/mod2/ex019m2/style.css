@@ -1,0 +1,41 @@
+@charset "UTF8";/* para css coloca esse charset UTF8 para caracterizar as letras */
+/*
+tudo que for css para identicar h1 # e em Hmtl é id. (só pode em um elemento)
+tudo que for em css "." em HTML é class (pode em vários elementos)
+*/
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f;
+}
+
+h1#principal {
+    text-align: center;/* quando se quer colocar um h1 personalizado usamos h1#principal que não precisa colocar h1 (#principal ele altera no site em css , mas como instruções deixo para saber qual h1 foi alterado)foi determinado no html veja no html.*/
+    background-color: #3c805e;
+    color: white;
+}
+h2{
+    color: #3c805e;
+}
+
+.basico{
+        color: #3c805e;
+       
+
+}
+
+.intermediario{
+        color: #80793c;
+
+}
+
+.avancado{
+        color: #803e3c;
+    
+}
+.destaque{
+    background-color: #d8d82770;
+}

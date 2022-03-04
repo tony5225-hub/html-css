@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>/*quando vc quer colocar uma cor em  uma tag vc coloca aqui style e ele faz para todos dessa tag para que apareça  veja no navegador no tipo div */
+        div {
+            display: inline-block; /* inline-bloc - tudo na mesma linha  */
+            background-color: lightgray;
+            border: 1px solid black ; /* 1 px largura, solid-tipo black obvio cor  */
+            text-align: center;
+            height: 200px ;/* height altura */
+            width: 200px; /* width largura */
+        }
+        div:hover { /* aprendemos # é id e . class aqui : é pseudo classe que esta relacionada a um elemento ou a uma classe mostra o estado de um determinado elemento da div , quando vc passa o mouse em cima modifica para amarelo isso é feito quando vc rola num site e mostra a cor para o usuário daratenção a uma determinada imagem ou texto do site */
+            background-color: yellow;
+        }
+        /* o Guanabra mostrou esse exemplo mas depois tirou mas eu vou deixar pq fiz comentário abaixo: DIV é um espaço...
+        div#d1{
+            background-color: blue;
+        }
+        */
+    </style>
+</head>
+<body>
+    <div id="d1">01</div><!-- DIV é um espaço qualquer que ocupa de ponta a ponta o documento do navegador OBS QUANDO VC IDENTIFICA AS DIC COM ID VC CONSEGUE FAZER AS CONFIGURAÇÕES VEJA ACIMA NO STYLE -->
+    <div id="d2">02</div>
+    <div id="d3">03 </div>
+</body>
+</html>

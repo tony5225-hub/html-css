@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1 { /* este h1 é um box level*/
+            background-color: lightgray ;
+           height: 300px ; /* se vc for no navegador pode clicar em inspecionar e clicando no h1 vc pode alterar desligar essa altura e largura (height,width)*/
+           /*
+           width:300px ;
+           border-width: 10px ;
+           border-style: solid;
+           border-color: darkslategrey;
+
+           o camando abaixo border: 10px solid darkslategrey;  ele é uma forma de simplificar todas essas acima 
+
+           */ 
+           border: 10px solid darkslategrey; 
+           /*
+           padding-top: 10px;  inserido um padding para dar espaço da borda  onde esta escrito Exemplo no navegador isso serve pois se vc for dev tools e mexer nestes padding e não tiver a posição correta que quer deixar e movimentar e ver  no código vc deixa no tamanho que vc quer deixar 
+           padding-right: 10px ;
+           padding-bottom: 10px;   
+           padding-left: 10px; 
+           
+           OUTRA OBS: este padding abaixo: tanto padding 10px ou padding: 10px 10px 10px 10px; eles simplificam todos esse paddings acima e se vc colocar com dois valores padding: 10px 20px ; ficam o decima e debaixo 10px e da direita e da esquerda 20px clique no inspecionar do anvegador para ver. 
+           */
+           padding: 10px ;
+           
+           margin: 20px auto 40px auto;
+            /*
+           margin-top: 10px;
+           margin-right: 10px;
+           margin-bottom: 40px;
+           margin-left: 10px; 
+           OBS: ACIMA COLOCAMOS UMA SIMPLIFICAÇÃO DA MARGIN POIS COMO COLOCADO ABAIXO SIMPLIFICANDO MOSTRA QUE NÃO PRECISAMOS  COLOCAR VARIAS MARGINS COMO VISTO ACIMA.
+           /*OBS SE VC QUISER COLOCAR UMA MARGEM NO MEIO TELA TEM  QUE POR margin: auto;
+         AI ELE CENTRALIZA SE VC FOR REDMENSIONAR O NAVEGADOR */
+         outline: 5x dashed darkred;
+            /* aqui foi simplificado deixando somente uma linha outline acima
+         outline-width: 5px;
+         outline-style: dashed;
+         outline-color: darkred; aqui podem ser usadas outline para fazer tamanho:outline-width: 5px; tracejado: outline-style: dashed; e colorido: outline-color: darkred; OBS: QUANDO VC TENTA VER NO INSPECIONAR ELE NÃO MOSTRA O OUTLINE NO QUADRO ONDE APARECE MARGIN (OUTLINE ESTA DENTRO DA MARGIN MEXENDO ELE NÃO ALTERA A MARGIN)MAIS SE VC OLHAR ONDE ESTA ESCRITO VC PODE MODIFICAR NO PX DO WIDTH ETC.*/
+        }
+        a{ /* este a de ancora  é um in line level*/
+            border-width: 10px ;
+            /*
+            border-style: dashed ;
+            border-style: dotted ;
+             podem serem usadas estas bordas acima para mostrar pontilhada ou tracejada como a debaixo dupla ou groove só tirar o simbolo de comentário para ver vai aparecer no navegador  
+            border-style: double ; e a groove que serve para mostrar que é uma caixa in line level
+            */ 
+            border-style: groove ;
+            
+            border-color: red;
+        
+            padding-top: 20px;
+            padding-right: 20px ;
+            padding-bottom: 40px;   
+            padding-left: 20px; 
+        }   
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1> <!--como na aula anterior h1 é box level OBS SE OLHARMOS PELO INSPECIONAR NO NAVEGADOR VEMOS QUE APARECE: user agent é navegador exibindo várias configurações  DO NAVEGADOR -->
+    <p>Parágrafos tbem são exemplos de box level mas os <a href="#">links são exemplos de caixa inline level</a> Vamos ver como tudo isso funciona  </p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io"target="_blank" rel="external">repositório público no Github</a><!--o target="_blank" rel="external" acima serve para quando vc abrir o link no navegador ele abre uma nova aba assim o usuário nao perde o seu site --> </p><!--a tag a href foi feita como envelopar seleciona a frase no caso foi repositório público no Github pressiona ctrl-shift-p digita abb da enter vai aparecer enter abreviation digita a letra da tag e da enter no caso aqui foi A para aparecer  <a href="" esse A significa ancora -->
+        <p>Voce pode também acessar o meu <a href="https://youtube.com/cursoemvideo">canal gratuito no you tube</a></p><!--tbem pode digitar direto A no caso a minusculo que aparece href para digitar o link-->
+        <h1>usando Links internos</h1>
+        <p>esta é a primeira página do site . se voce quiser pode acessar a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a>  </p><!-- onde coloca next significa para ir para p[roxima pág e para anexar o index no aspas do href segura ctrl e aperta espaço ele mostra o que vc tem para anexar nas aspas e página tem que estar na mespágibna do index no caso esse indexprática-->
+        <p>Voce pode acessar a nossa <a href="noticias/pag003pratica.html" rel ="next" target="_self">página de notícia</a>s </p><!--para abrir uma página no html com link e funcionar clica ctrl espaço acha a pasta clica nela e depois no html que esta dentro dela vai ficar ("noticias/pag003pratica.)
+            -->
+            <h1>Links para downloads</h1>
+            <ul>
+                <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro PDF</a></li><!-- quando for para baixar clica ctrl espaço e busca a pasta livro e clica nela mostra a meu livro.pdf porém não baixou pdf POIS ALGUNS NAVEGADORES NÃO BAIXAM O ZIP ai utiliza essa alternativa MAIS ABAIXO NO DOWNLOAD ZIP  SERÁ MOSTRADO PARA FAZER DOWNLOAD UTILIZANDO O apliccation/zip". OBS: para procurar todos os media type tipo se for por pdf no site se digitar no site ctrl+f e digitar pdf ou zip mas isso tem que ser no chrome:https://www.iana.org/assignments/media-types/media-types.xhtml -->
+                <li><a href="livro/meulivro.zip" download="meulivro.zip" type="apliccation/zip">Livro compactado em ZIP</a></li>
+            </ul>
+            
+</body>
+</html>

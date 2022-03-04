@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Pesonalizada</title>
+    <style>
+        h1{ /* aqui foi criado esta borda para fazer criação com a que foi feita no Gimp */
+           border:10px solid transparent;
+           padding: 10px; 
+          /*  border-image-source: url  *//*('borda.png');*/
+          /*  border-image-slice: 27;/* aqui slice significa fatiar e esse 27  é para aumentar a borda depois de colocado a border repeat tbem botão direito no navegador inspecionar ir no body /teste de borda/no border slice e no 20 clicar e aumentar com mouse para arrumar a borda e no border 20px tbem da para mexer para diminuir ou aumentar e ficar como desejar OBS MS PARA FICAR COMO 27 TEM QUE ALTERAR NO HTML FEITO ACIMA SENÃO ELE NÃO FICA O INSPECIONAR SERVE PARA VER COMO VAIN DEIXAR PARA ATUALIZAR NO HTML*/
+          /*  border-image-repeat: repeat; *//* AQUI PODE USAR O REPEAT DEIXAR SEM ESTICAR OU STRETCH PARA ESTICAR   */
+            border-image: url('borda.png') 27 repeat ; /*vc pode usar este tipo de borda para substituir todas as de cima OBS A BORDER border:10px solid black; */
+          /*  padding: 10px;  TEM CONTINUAR PARA MANTER E MODIFICAR PARA TRANSPARENT POIS NEM TODOS OS NAVEGADORES CONSEGUEM MOSTRAR O BLACK  (border-image-repeat,border:10px solid black;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;:)  */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

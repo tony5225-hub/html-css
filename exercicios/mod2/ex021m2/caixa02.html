@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(102, 102, 102) ;
+            padding: 3px;
+            
+           box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.315); 
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+             text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+        main{
+            background-color: white ;
+            padding: 10px;
+            margin: 10px;
+            border-radius:  10px 0px ;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384); 
+            
+            /*
+            não pode ser colocado no inspecionar valores negativos ele risca onde escrito border dev tools */
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article aside{
+            background-color: rgb(167, 140, 140);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px ;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color : white;
+            border-radius: 50%;  /* colocando em % arredonda a margin*/
+        }
+    </style>
+</head>
+<body><!--embaixo é colocado header , main , footer que são tags semanticas e antes colocavam-se as id para criar site nova maneira de deixar  site mais organizado e melhor de ser visto menu dentro header que é cabeçalho que estão sendo utilizado a nav para colocar o link etc  -->
+   <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+   </header>
+   <main>
+    <section id="Assuntos">
+        <p>Esporte Politica Tecnologia</p>
+        
+    </section>
+    <section id="Noticias"><!--essas tags article estão sendo incluídas pois estou determinando que terá duas noticias. e aside que é conteúdo periférico relativo ao artigo , onde vem parágrafo sobre o artigo (lorem ) e um h2 que é nome do artigo OBS: com este modo semantico o conteúdo é muito mais organizado e prático no novo HTML5 hoje é possível colocar grouping tag dentro de grouping tag -->
+        <article>
+            <h2>Notícia Sobre o Brasil </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam, unde sed aperiam quasi repellendus exercitationem recusandae ipsam. Eligendi placeat ab culpa? Animi pariatur quas maiores hic adipisci, harum ipsam!</p>
+            <aside>
+                <p>Artigo escrito por Claudia Silva</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+    </section>
+   </main>
+   <footer>
+    <p>Desenvolvido pelo CursoemVideo</p>
+   </footer>
+   <div id="bola" ></div>
+</body>
+</html>

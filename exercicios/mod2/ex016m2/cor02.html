@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /* esse "*" eh seletor globais das CSS serve para deixar o degradee grande senão ficaria Zebrado. */
+            height: 100%;
+        }
+    </style>
+    <style>
+        body {
+            
+        background-image: linear-gradient(45deg ,  #322D87 1% ,#003E8D ,#B61C7A ,#DE9C34 10% ,#C73C38 
+        ); 
+        /*
+        TRANSFORMANDO ESSE LINEAR GRADIENTE EM RADIAL GRADIENTE
+        background-image: linear-gradient(to bottom, #322D87 ,#003E8D,#B61C7A,#DE9C34,#C73C38
+        );  
+        background-image: radial-gradient(circle, #322D87 ,#003E8D,#B61C7A,#DE9C34,#C73C38
+        );   */        
+         
+        background-attachment: fixed; 
+        
+       
+        }
+    </style>
+</head>
+<body>
+   <h1>Testando Gradiente</h1> 
+</body>
+</html>
