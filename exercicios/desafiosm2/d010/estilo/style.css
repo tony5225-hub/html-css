@@ -31,6 +31,13 @@ aqui vai ser criado a  pseudoclasse chamada root que vc coloca as cores e chama 
     --fonte-destaque:'Bebas Neue', cursive; 
     --fonte-android: 'Android',cursive;
 }
+
+/*aqui vai colocar tipo um seletor chaves com asterisco é uma configuração global de margin e padding seleciona todos elementos do html para tirar espaços */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: var(--cor0); /*aqui é o exemplo da varável sendo usada para aparecer clica ctrl espaço até o final digita --cor 0 e fica como var acima*/
     font-family: var(--fonte-padrao);
@@ -59,7 +66,7 @@ main{
 
 main  h1 {
     color: var(--cor5);
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-android); /*aqui se vc quiser mudar para uma outra fonte, exemplo seu cliente resolveu mudar,só alterar para destaque ou padrão colocada acima como uma segunda opção  */
 
 
 }
