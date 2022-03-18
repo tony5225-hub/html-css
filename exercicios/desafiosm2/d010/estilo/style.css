@@ -32,7 +32,7 @@ aqui vai ser criado a  pseudoclasse chamada root que vc coloca as cores e chama 
     --fonte-android: 'Android',cursive;
 }
 
-/*aqui vai colocar tipo um seletor chaves com asterisco é uma configuração global de margin e padding seleciona todos elementos do html para tirar espaços */
+/*aqui vai colocar tipo um seletor chaves com asterisco é uma configuração global seleciona todos elementos do html para tirar espaços de margin e padding(preenchimento) */
 *{
     margin: 0px;
     padding: 0px;
