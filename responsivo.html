@@ -14,9 +14,13 @@
             padding: 20px;
             border-radius: 10px;
 
-            min-width: 320px;
-            max-width: 800px;
+            min-width: 280px;/* essa largura é colocada para um celular antigo pequeno pois se abrir em um destes a imagem vai ser adaptada ; e onde foi colocado margin auto serve para adaptar a imagem pois se for visto em uma tela maior vai se auto adaptar ; onde foi posto imagem 100% ele deixa a imagem legal mais veja embaixo veja comentario abaixo. */
+            max-width: 800px; 
             margin: auto;
+        }
+
+        img{
+            width: 100%;
         }
     </style>
 </head>
@@ -24,7 +28,9 @@
     <main>
         <h1>testando responsividade</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ex impedit temporibus suscipit sunt molestias reiciendis facere! Similique, optio. Sed dolorum dolores rem reiciendis assumenda optio aperiam eum cupiditate itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam velit dolore explicabo voluptates laborum dicta delectus, nemo libero, error quidem magni culpa, maxime eligendi similique quas molestias eius quia obcaecati! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, quidem? Amet molestias beatae non aut cumque eaque illo blanditiis aspernatur, sit placeat id animi omnis porro earum, assumenda, fugiat delectus.</p>
-        <img src="exercicios/desafiosm2/d010/imagens/irina-blok.jpg" alt="Irina Blok ">
+        <picture> <!-- aqui foi envelopado a <img src="exercicios/desafiosm2/d010/imagens/irina-blok.jpg" alt="Irina Blok que é CTRL-Shift-espaço e digitado o picture e feito o source para inserir a imagens/irina-blok-pq.jpg pois quando vc diminui para menos de 600px aparece a outra imagem-->
+            <source media="(max-width:600px )" srcset="exercicios/desafiosm2/d010/imagens/irina-blok-pq.jpg">
+            <img src="exercicios/desafiosm2/d010/imagens/irina-blok.jpg" alt="Irina Blok "></picture>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ex impedit temporibus suscipit sunt molestias reiciendis facere! Similique, optio. Sed dolorum dolores rem reiciendis assumenda optio aperiam eum cupiditate itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam velit dolore explicabo voluptates laborum dicta delectus, nemo libero, error quidem magni culpa, maxime eligendi similique quas molestias eius quia obcaecati! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, quidem? Amet molestias beatae non aut cumque eaque illo blanditiis aspernatur, sit placeat id animi omnis porro earum, assumenda, fugiat delectus.</p>
     </main>
 </body>
