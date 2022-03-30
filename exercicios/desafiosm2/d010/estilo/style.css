@@ -61,6 +61,10 @@ nav {
 }
 
 main{
+
+    min-width: 300px; /* essa largura é colocada para um celular antigo pequeno pois se abrir em um destes a imagem vai ser adaptada ; e onde foi colocado margin auto serve para adaptar a imagem pois se for visto em uma tela maior vai se auto adaptar */
+    max-width: 1000px;
+    margin: auto;
     background-color: white;
 }
 
@@ -73,6 +77,10 @@ main  h1 {
 
 main h2 {
     font-family: var(--fonte-android);
+}
+
+main img {
+    width: 100%;   
 }
 
 footer {
