@@ -65,7 +65,11 @@ main{
     min-width: 300px; /* essa largura é colocada para um celular antigo pequeno pois se abrir em um destes a imagem vai ser adaptada ; e onde foi colocado margin auto serve para adaptar a imagem pois se for visto em uma tela maior vai se auto adaptar */
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 30px ; /*esta margin foi para no final da margem embaixo para conteudo não ficar colado no rodapé*/
+    padding: 20px; /*para deixar a largura 
+    da página desgrudada do lado esquerdo */
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425); /*sombra de 0px para não ter deslocamento lateral e espalhamento de 10px black mas que vai ficar um pouco mais fraco volocando mouse no black e descendo 0, 0, 0, 0.425); */
 }
 
 main  h1 {
