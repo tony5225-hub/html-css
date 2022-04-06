@@ -70,6 +70,8 @@ main{
     da página desgrudada do lado esquerdo */
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425); /*sombra de 0px para não ter deslocamento lateral e espalhamento de 10px black mas que vai ficar um pouco mais fraco volocando mouse no black e descendo 0, 0, 0, 0.425); */
+    border-bottom-left-radius: 10px; /*aqui foi posto border lefte right manual para deixar arrendondado somente a parte de baixo lef and right */
+    border-bottom-right-radius: 10px;
 }
 
 main  h1 {
