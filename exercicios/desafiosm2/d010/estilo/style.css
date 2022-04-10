@@ -45,15 +45,30 @@ body{
 
 header{
     background-color: var(--cor4);
-}
+    min-height: 150px; 
+    text-align: center;
+    padding-top: 40px;/*este padding para   não ficar muito colado no topo */
+
+    }
 
 header  h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px; /*esta margim para dar um espaço */
+
+    
 }
 
 header > p{
+   font-family: var(--fonte-padrao); 
+   font-size: 1.2em;
    color: white; 
+   max-width: 600px; /*aqui foi colocado nesse header paragrafo esse max-width e embaixo foi colocado margem auto para centralizar pois com os 500px ele não centraliza e foi colocado os padding para não colar dos lados quando vc movimenta no responsivo   */
+   padding-right: 10ox;
+   padding-left: 10px;
+   margin: auto;
+
 }
 
 nav {
