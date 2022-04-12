@@ -56,7 +56,7 @@ header  h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
     margin-bottom: 20px; /*esta margim para dar um espaço */
-
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);/*aqui coloquei esta sombra na mão pois não consegui inserir no inspecionar no google*/
     
 }
 
@@ -65,7 +65,7 @@ header > p{
    font-size: 1.2em;
    color: white; 
    max-width: 600px; /*aqui foi colocado nesse header paragrafo esse max-width e embaixo foi colocado margem auto para centralizar pois com os 500px ele não centraliza e foi colocado os padding para não colar dos lados quando vc movimenta no responsivo   */
-   padding-right: 10ox;
+   padding-right: 10px;
    padding-left: 10px;
    margin: auto;
 
