@@ -44,7 +44,7 @@ body{
 }
 
 header{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));/*feito degrade como visto em exercícios*/
     min-height: 150px; 
     text-align: center;
     padding-top: 40px;/*este padding para   não ficar muito colado no topo */
@@ -56,7 +56,7 @@ header  h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
     margin-bottom: 20px; /*esta margim para dar um espaço */
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);/*aqui coloquei esta sombra na mão pois não consegui inserir no inspecionar no google*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);/*aqui coloquei esta sombra inserindo  text shadow 2px 2px esses px sevem para clarear ou escurecer a sombra.... com rgba só clicar na cor que vc movimenta com mouse para ficar neste rgba pois não consegui inserir no inspecionar no google*/
     
 }
 
@@ -68,11 +68,14 @@ header > p{
    padding-right: 10px;
    padding-left: 10px;
    margin: auto;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 
 }
 
 nav {
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363); /*aqui coloquei esta sombra  inserindo  text shadow 0px 7px esses px severm para clarear ou escurecer a sombra.... com rgba só clicar na cor que vc movimenta com mouse para ficar neste rgba pois não consegui inserir no inspecionar no google*/
 }
 
 main{
