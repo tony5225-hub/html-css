@@ -78,6 +78,20 @@ nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363); /*aqui coloquei esta sombra  inserindo  text shadow 0px 7px esses px severm para clarear ou escurecer a sombra.... com rgba só clicar na cor que vc movimenta com mouse para ficar neste rgba pois não consegui inserir no inspecionar no google*/
 }
 
+nav > a { /*colocado color para deixar branco , padding para separar noticias home etc ,text decoration para tirar sublinhado font-weight: bold; deixar negrito e border radius no home noticias dexiar meio arrrendodado a borda este transition-duration foi uma novidade que Guanabara  colocou, para quando passar o mouse em cima ele deixa .5s com efeito veja no site */
+    color: white;
+    padding: 10px; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover{ /*inserido este nav hover para quando passar o mouse no em cima home noticias etc ele muda de cor */ 
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
 main{
 
     min-width: 300px; /* essa largura é colocada para um celular antigo pequeno pois se abrir em um destes a imagem vai ser adaptada ; e onde foi colocado margin auto serve para adaptar a imagem pois se for visto em uma tela maior vai se auto adaptar */
@@ -88,7 +102,7 @@ main{
     da página desgrudada do lado esquerdo */
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425); /*sombra de 0px para não ter deslocamento lateral e espalhamento de 10px black mas que vai ficar um pouco mais fraco volocando mouse no black e descendo 0, 0, 0, 0.425); */
-    border-bottom-left-radius: 10px; /*aqui foi posto border lefte right manual para deixar arrendondado somente a parte de baixo lef and right */
+    border-bottom-left-radius: 10px; /*aqui foi posto border left right manual para deixar arrendondado somente a parte de baixo lef and right */
     border-bottom-right-radius: 10px;
 }
 
