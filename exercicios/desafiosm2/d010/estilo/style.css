@@ -117,12 +117,19 @@ main h2 {
     font-family: var(--fonte-android);
 }
 
+main p{
+    margin: 15px 0px; /*esta margin serve para alterar emcima e embaixo de todos os parágrafos o text justify para deixar alinhado como word e o text-ident é para fazer como se fosse o começo do parágrafo o umpouco para direita veja exemplo embaixo de história do mascote... o provalvemente, o line-height serve para dar altura nas linhas paragrafos aumente para 2em e olhe no site. */
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+
 main img {
     width: 100%;   
 }
 
 main img.pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
