@@ -113,8 +113,12 @@ main  h1 {
 
 }
 
-main h2 {
+main h2 {/*esse background-image: ele seve para por imagens em todos h2 e as cores para fazer o degradee conforme colocado nos links e tex indent serve para dar espacinho do lado esquerdo para direito */
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1),transparent) ;
+    text-indent: 8px ;
 }
 
 main p{
@@ -138,7 +142,7 @@ main a {/* o main serve para colocar  tudo o que tiver links do site vai ficar e
     padding: 2px 6px ;
 }
 
-main a:hover{/*o hover serve para quando passar o mouse emcima dar efeito underline e color para mostrar no momento do mouse */
+main a:hover{/*o hover serve para quando passar o mouse emcima dar efeito underline e color para mostrar no momento passar o mouse */
     text-decoration: underline;
     color: var(--cor4);
 }
