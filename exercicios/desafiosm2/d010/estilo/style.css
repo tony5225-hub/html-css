@@ -121,7 +121,26 @@ main p{
     margin: 15px 0px; /*esta margin serve para alterar emcima e embaixo de todos os parágrafos o text justify para deixar alinhado como word e o text-ident é para fazer como se fosse o começo do parágrafo o umpouco para direita veja exemplo embaixo de história do mascote... o provalvemente, o line-height serve para dar altura nas linhas paragrafos aumente para 2em e olhe no site. */
     text-align: justify;
     text-indent: 30px;
-    line-height: 1em;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong { /*aqui tudo o que estiver em negrito no site com color e font vai ter estes efeitos*/
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+main a {/* o main serve para colocar  tudo o que tiver links do site vai ficar em negrito com text e o font weight, color  para dar efeitos*/
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    padding: 2px 6px ;
+}
+
+main a:hover{/*o hover serve para quando passar o mouse emcima dar efeito underline e color para mostrar no momento do mouse */
+    text-decoration: underline;
+    color: var(--cor4);
 }
 
 main img {
