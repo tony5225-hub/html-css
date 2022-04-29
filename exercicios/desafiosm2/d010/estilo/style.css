@@ -78,7 +78,7 @@ nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363); /*aqui coloquei esta sombra  inserindo  text shadow 0px 7px esses px severm para clarear ou escurecer a sombra.... com rgba só clicar na cor que vc movimenta com mouse para ficar neste rgba pois não consegui inserir no inspecionar no google*/
 }
 
-nav > a { /*colocado color para deixar branco , padding para separar noticias home etc ,text decoration para tirar sublinhado font-weight: bold; deixar negrito e border radius no home noticias dexiar meio arrrendodado a borda este transition-duration foi uma novidade que Guanabara  colocou, para quando passar o mouse em cima ele deixa .5s com efeito veja no site */
+nav > a { /*colocado color para deixar branco , padding para separar noticias home etc ,text decoration para tirar sublinhado font-weight: bold; deixar negrito e border radius no home noticias deixar meio arrrendodado a borda este transition-duration foi uma novidade que Guanabara  colocou, para quando passar o mouse em cima ele deixa .5s com efeito veja no site */
     color: white;
     padding: 10px; 
     border-radius: 5px;
@@ -122,7 +122,7 @@ main h2 {/*esse background-image: ele seve para por imagens em todos h2 e as cor
 }
 
 main p{
-    margin: 15px 0px; /*esta margin serve para alterar emcima e embaixo de todos os parágrafos o text justify para deixar alinhado como word e o text-ident é para fazer como se fosse o começo do parágrafo o umpouco para direita veja exemplo embaixo de história do mascote... o provalvemente, o line-height serve para dar altura nas linhas paragrafos aumente para 2em e olhe no site. */
+    margin: 15px 0px; /*esta margin serve para alterar emcima e embaixo de todos os parágrafos o text justify para deixar alinhado como word e o text-ident é para fazer como se fosse o começo do parágrafo o um pouco para direita veja exemplo embaixo de história do mascote... o provalvemente, o line-height serve para dar altura nas linhas paragrafos aumente para 2em e olhe no site. */
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
@@ -155,6 +155,18 @@ main img.pequena{
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;/*o padding server para dar espaço de onde esta escrito para dar espaço do topo para baixo de acordo com os px colocados */
+    border-radius: 05px;/* borda radius serve para deixar a borda do verde olhar no site arredondado de acordo com os px colocados */
+
+}
+
+aside > ul { /*aqui onde esta aside > é para deixar as bolinhas para dentro do verde no site , mas se vc quisesse mexer em todo Ul do site ai colocaria só Ul */
+    list-style-position: inside;
+    columns: 2; /*para dividir as colunas em 2 para não ficar muito grande e quando for olhar em celular não bagunçar o que esta escrito*/ 
 }
 
 footer {
