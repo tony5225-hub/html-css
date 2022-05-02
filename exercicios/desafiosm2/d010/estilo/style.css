@@ -122,7 +122,7 @@ main h2 {/*esse background-image: ele seve para por imagens em todos h2 e as cor
 }
 
 main p{
-    margin: 15px 0px; /*esta margin serve para alterar emcima e embaixo de todos os parágrafos o text justify para deixar alinhado como word e o text-ident é para fazer como se fosse o começo do parágrafo o um pouco para direita veja exemplo embaixo de história do mascote... o provalvemente, o line-height serve para dar altura nas linhas paragrafos aumente para 2em e olhe no site. */
+    margin: 15px 0px; /*esta margin serve para alterar em cima e embaixo de todos os parágrafos o text justify para deixar alinhado como word e o text-ident é para fazer como se fosse o começo do parágrafo o um pouco para direita veja exemplo embaixo de história do mascote... o provalvemente, o line-height serve para dar altura nas linhas paragrafos aumente para 2em e olhe no site. */
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
@@ -164,7 +164,16 @@ aside{
 
 }
 
+aside > h3 { /*esse background-color: ele seve para por cor em todos h3  */
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px ;/*essas margins com -10px -10px 0px -10px é para deixar as margins direita esquerda crescer para fora por isso -10px  e arredondamento coloca o border radius 10px*/
+    border-radius: 10px 10px 0px 0px;
+}
+
 aside > ul { /*aqui onde esta aside > é para deixar as bolinhas para dentro do verde no site , mas se vc quisesse mexer em todo Ul do site ai colocaria só Ul */
+    list-style-type: '\2714\00A0\00A0';/* list-style-type para dar estilo e entramos no site https://emojipedia.org/check-mark/ e pesquisou check depois copiou esse '\2714'que é colocado entre aspas e contra barra para dar efeito de check e 00A0 é colocado depois para check não ficar colado nos números 1.5... no site todo esse efeito as vezes funciona só no google chrome*/
     list-style-position: inside;
     columns: 2; /*para dividir as colunas em 2 para não ficar muito grande e quando for olhar em celular não bagunçar o que esta escrito*/ 
 }
