@@ -43,6 +43,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content: '\00A0\1F517'; /*aqui foi colocado esse a.externo::after para todo link externo do site ficar com simbolo de corrente ver site https://emojipedia.org pesquisar em link , e para aparecer foi no html no link ( android e todos os link externo no HTML colocado a class="externo" para mostra o simbolo de corrente e colocado esse \00A0 para dar espaço quando aparece a corrente vcer no site.  */
+}    
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));/*feito degrade como visto em exercícios*/
     min-height: 150px; 
@@ -160,7 +164,8 @@ main img.pequena{
 aside{
     background-color: var(--cor1);
     padding: 10px;/*o padding server para dar espaço de onde esta escrito para dar espaço do topo para baixo de acordo com os px colocados */
-    border-radius: 05px;/* borda radius serve para deixar a borda do verde olhar no site arredondado de acordo com os px colocados */
+    border-radius: 10px;/* borda radius serve para deixar a borda do verde olhar no site arredondado de acordo com os px colocados */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);/* bpx shadow sombra */
 
 }
 
