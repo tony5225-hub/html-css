@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title> 
+    <style>
+        div.quadrado{/*colocou esse estilo no html e div.quadrado para que toda div tiver no html classe quadrado vai ter as configurações abaixo */ 
+            display: inline-block; /*para ficar no site do lado*/
+            border:2px  solid black; /* 2px colocou para engrossar as bordas*/
+            border-radius: 10px;/*para ficar arredondado as pontas da div*/
+            background-color: lightgray;
+            width: 300px; 
+            height: 300px;
+        }
+        
+        div#q1{
+            background-color: skyblue;
+        }
+        
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow,
+            red);/*aqui este background-image server com linear-grad fazer esse degradee visto no site*/
+        }
+        
+        div#q3{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"> <!--identificação das divs-->
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
