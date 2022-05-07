@@ -59,6 +59,7 @@ header  h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    font-weight: normal;/*aqui usou para deixar mais leve aprencia da fonte sem ficar negrito*/
     margin-bottom: 20px; /*esta margim para dar um espaço */
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);/*aqui coloquei esta sombra inserindo  text shadow 2px 2px esses px sevem para clarear ou escurecer a sombra.... com rgba só clicar na cor que vc movimenta com mouse para ficar neste rgba pois não consegui inserir no inspecionar no google*/
     
@@ -112,15 +113,19 @@ main{
 
 main  h1 {
     color: var(--cor5);
-    font-family: var(--fonte-android); /*aqui se vc quiser mudar para uma outra fonte, exemplo seu cliente resolveu mudar,só alterar para destaque ou padrão colocada acima como uma segunda opção  */
+    font-family: var(--fonte-android); /*aqui se vc quiser mudar para uma outra fonte, exemplo seu cliente resolveu mudar,
+    só alterar para destaque ou padrão colocada acima como uma segunda opção  */
+    font-weight: normal ;/*aqui usou para deixar mais leve aprencia da fonte sem ficar negrito*/
+    font-size: 1.8em;
 
 
 }
 
-main h2 {/*esse background-image: ele seve para por imagens em todos h2 e as cores para fazer o degradee conforme colocado nos links e tex indent serve para dar espacinho do lado esquerdo para direito */
+main h2 {/*esse background-image: ele seve para por imagens em todos h2 e as cores para fazer o degradee conforme colocado nos links e text indent serve para dar espacinho do lado esquerdo para direito */
     font-family: var(--fonte-android);
     color: var(--cor4);
     font-size: 1.3em;
+    font-weight: normal;/*aqui usou para deixar mais leve aprencia da fonte sem ficar negrito*/
     background-image: linear-gradient(to right, var(--cor1),transparent) ;
     text-indent: 8px ;
 }
@@ -159,6 +164,12 @@ main img.pequena{
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;  /*para colar na parte de fora do site veja que 0px -20px o zero  é para não ter espaço nenhum embaixo e emcima e o -20px ele ajusta automático lado esq. e dir. 30px para ajustar a parte externa colar o verde  */
+    padding: 20px; /*(preenchimento) padding dar preenchimento no video dentro do verde */
 }
 
 aside{
