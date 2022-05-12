@@ -68,11 +68,12 @@ header  h1 {
 header > p{
    font-family: var(--fonte-padrao); 
    font-size: 1.2em;
-   color: white; 
+   color: var(--cor1); 
    max-width: 600px; /*aqui foi colocado nesse header paragrafo esse max-width e embaixo foi colocado margem auto para centralizar pois com os 500px ele não centraliza e foi colocado os padding para não colar dos lados quando vc movimenta no responsivo   */
    padding-right: 10px;
    padding-left: 10px;
    margin: auto;
+   margin-bottom: 20px;
    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 
 }
@@ -83,8 +84,8 @@ nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363); /*aqui coloquei esta sombra  inserindo  text shadow 0px 7px esses px severm para clarear ou escurecer a sombra.... com rgba só clicar na cor que vc movimenta com mouse para ficar neste rgba pois não consegui inserir no inspecionar no google*/
 }
 
-nav > a { /*colocado color para deixar branco , padding para separar noticias home etc ,text decoration para tirar sublinhado font-weight: bold; deixar negrito e border radius no home noticias deixar meio arrrendodado a borda este transition-duration foi uma novidade que Guanabara  colocou, para quando passar o mouse em cima ele deixa .5s com efeito veja no site */
-    color: white;
+nav > a { /*colocado color para diferenciar do h1 , padding para separar noticias home etc ,text decoration para tirar sublinhado font-weight: bold; deixar negrito e border radius no home noticias deixar meio arrrendodado a borda este transition-duration foi uma novidade que Guanabara  colocou, para quando passar o mouse em cima ele deixa .5s com efeito veja no site */
+    color: var(--cor1);
     padding: 10px; 
     border-radius: 5px;
     text-decoration: none;
@@ -170,6 +171,16 @@ div.video {
     background-color: var(--cor5);
     margin: 0px -20px 30px -20px;  /*para colar na parte de fora do site veja que 0px -20px o zero  é para não ter espaço nenhum embaixo e emcima e o -20px ele ajusta automático lado esq. e dir. 30px para ajustar a parte externa colar o verde  */
     padding: 20px; /*(preenchimento) padding dar preenchimento no video dentro do verde */
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe{/*aqui é um macete que vai ser utilizado no iframe do video para deixar melhor em cima div video pois position relative e um padding=bottom 57% para ajustar no site e embaixo position absolute vai ser colocado top para ajustar de cima para baixo olhando no canto esquerdo emcima e o left do lado esq. para direita , o width e o height para dar largura e altura no posicionamento do video no site tudo isso em "%" ai ajusta de acordo com % que quiser */
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside{
