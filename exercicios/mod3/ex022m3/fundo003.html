@@ -7,15 +7,27 @@
     <title>Posição Fundos</title>
     <style>/*este estilo para toda as divs classe bloco quer será feito, os efeitos, height altura da div,border 1px solida, border radius serve para arredondar a borda, margin dar espaço entre uma e outra. */
         div.bloco {
-            background-image: url('imagens/wallpaper002.jpg'); /*por padrão o fundo começa ser aplicado do lado esquerdo*/
+            background-image: url('imagens/wallpaper003.jpg'); /*por padrão o fundo começa ser aplicado do lado esquerdo*/
             height: 200px;
             border: 1px solid black;
             border-radius: 20px;
             margin: 10px;
         }
 
-        div#q1 {/*aqui é uma declaração de q1 até q4*/
+        div#q1 {/*aqui é uma declaração de q1 até q4 e usando uma imagem (wallpaper003) vc divide ela em 4 partes ou se quiser em mais olhando ela no site vai aparecer cada posição nas definições das divs */
+            background-position: left top;
+        }
 
+        div#q2{
+            background-position: left center;
+        }
+
+        div#q3{
+            background-position: right bottom;
+        }
+
+        div#q4{
+            background-position: center center;
         }
 
     </style>
