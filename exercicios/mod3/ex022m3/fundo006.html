@@ -16,11 +16,11 @@
             /*background-attachment: fixed; 
             /*esse background-attachmetn (fixo) é para fixar o fundo quando vc movimenta o conteúdo só ele movimenta*/
         
-            /*shorthand-background  (para colocar todos esses background numa declaração só usando na ordem abaixo e comando declarado.
-                color > image > position > repeat > [Size] (em colhete pois vai ter mais informação) > attachment
+            /*shorthand-background  (para colocar todos esses background acima numa declaração só usando na ordem abaixo e comando declarado.
+                color > image > position > repeat > [Size] (em colhete size para informação: pois nas regras diz que quando vc coloca o coverque é size(tamanho) irá funcionar no navegador aparecendo  a imagem de fundo mas se deixar o cover não aparece ) > attachment por isso fica este caminho abaixo:( background: black url('imagens/wallpaper002.jpg')center center no-repeat cover fixed;) assim foi colocado embaixo 
             */  
-            background: black url('imagens/wallpaper002.jpg')center center no-repeat cover fixed;
-
+            background: black url('imagens/wallpaper002.jpg')center center no-repeat fixed;
+            background-size: cover;
         }
                   
 
