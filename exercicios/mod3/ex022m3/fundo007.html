@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container { /*usa-se em boxe  em html o posicionamento relativo (position: relative;)e no conteudo vai ter posicionamento absoluto*/
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo{/*posicionamento absoluto ai vc poem o left e top para alterar as posições no boxe*/
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*margin: auto; se eu quiser centralizar no meio uso o margin auto mas se quiser que fique cetralizado certo na tela ai vai configurar no container veja acima */
+            left: 50%; /*100 vem desde a borda que era pixel agora vira porcentagem pois pode trabalhar como porcentagem, até ponto do lado esquerdo no amarelo e */
+            top: 50%; /*100 vem desde a borda que era pixel agora vira porcentagem pois pode trabalhar como porcentagem, até ponto do lado esquerdo no amarelo e */
+        }
+    </style>
+</head>
+<body><!--aqui =é criado duas divs semanticas que é a section e a article para que quando vai centralizar ter uma id com container e conteudo-->
+    <section id="container"> 
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
