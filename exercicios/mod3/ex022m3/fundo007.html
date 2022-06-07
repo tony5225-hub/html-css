@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
     <style>
-        #container { /*usa-se em boxe  em html o posicionamento relativo (position: relative;)e no conteudo vai ter posicionamento absoluto*/
+        #container { /*usa-se em boxe  em html o posicionamento relativo (position: relative;)e no conteudo vai ter posicionamento absoluto OBS FINAL DO EXERCÍCIO: ESSE É O HTML DISCRIMANDO EMBAIXO NO BODY  CONTAINER E CONTEUDO E ACIMA NAS CONFIGURAÇÕES CONTAINER  DEIXAR COMO POSIÇÃO RELATIVA E CONTEUDO COMO POSIÇÃO ABSOLUTA E FAZENDO O TRANSFORM PARA CENTRALIZAR COM -50% PARA ESQUERDA,-50 PARA CIMA O CONTAINER E CONTEUDO CENTRALIZADOS E TERMINA ESTE EXERCÍCIO*/
+            
+            background-image: url('imagens/target001.png') ;/*aqui para por centro na imagem e alinhar dentro da imagem*/
+            background-size: 100% 100%;/*para alinhar o alvo da imagem e coloca-se os dois background (Image e o size) no conteudo para inserir o alvo no retangulo menor da imagem OBS: QUANDO USOU OS 50% EMBAIXO NO LEFT E TOP SERVIU PARA DEIXAR RETANGULO AMARELO BEM NA METADE QDO VISTO NA AREA ROXA DO RETANGULO MAIOR*/
+            
             position: relative;
-            height: 500px;
+            height: 96vh; /*antes era 500px colocou para melhorar a visão do comprimento com retangulo amarelo e quando vc aumenta ou diminui  o roxo o amarelom mantem o tamanho não distorce*/
             background-color: purple;
             padding: 10px;
         }
 
         #conteudo{/*posicionamento absoluto ai vc poem o left e top para alterar as posições no boxe*/
+            background-image: url('imagens/target001.png') ;
+            background-size: 100% 100%;
             position: absolute;
             height: 200px;
             width: 400px;
             background-color: yellow;
-            /*margin: auto; se eu quiser centralizar no meio uso o margin auto mas se quiser que fique cetralizado certo na tela ai vai configurar no container veja acima */
-            left: 50%; /*100 vem desde a borda que era pixel agora vira porcentagem pois pode trabalhar como porcentagem, até ponto do lado esquerdo no amarelo e */
-            top: 50%; /*100 vem desde a borda que era pixel agora vira porcentagem pois pode trabalhar como porcentagem, até ponto do lado esquerdo no amarelo e */
+            /*margin: auto; se eu quiser centralizar no meio uso o margin auto mas se quiser que fique centralizado certo na tela ai vai configurar no container veja acima */
+            left: 50%; /*100 vem desde a borda que era pixel agora vira porcentagem pois pode trabalhar como porcentagem, até ponto do lado esquerdo no amarelo */
+            top: 50%; /*100 vem desde topo que era pixel agora vira porcentagem pois pode trabalhar como porcentagem, até ponto do lado esquerdo no amarelo  */
+        
+            transform: translate(-50%,-50%);/*este transform serve para movimentar o retangulo amarelo para centro do alvo OBS: se vc usar pixel exemplo o primeiro -20px centraliza para esquerda lado e o segundo, para cima -20px se primeiro +20px  para direita e o segundo, para baixo agora utilizando os -50%, e -50% para alinhar no centro do alvo retangulo roxo conforme acima e se aumentar ou diminuir o retangulo roxo vai sempre ficar fixo o retangulo amarelo*/
         }
     </style>
 </head>
-<body><!--aqui =é criado duas divs semanticas que é a section e a article para que quando vai centralizar ter uma id com container e conteudo-->
+<body><!--aqui =é criado duas divs semanticas que é a section e a article para que quando vai centralizar ter uma id com container e conteudo -->
     <section id="container"> 
         <article id="conteudo">
 
