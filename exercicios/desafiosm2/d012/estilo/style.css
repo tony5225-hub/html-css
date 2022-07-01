@@ -1,1 +1,22 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  /*configurações e html e body em comum*/
+  html, body {
+    min-height: 100vh;/*tamanho minimo da view hight(visão da altura)*/
+    background-color: darkgray;
+  }
+  /*configurações no header topo do site*/
+  header { 
+        background-color: black;
+        color: white; 
+        text-align: center;
+  }
+
+  header {
+    padding-top: 50px ;/*espaço em cima e duas técnicas novas para deixar letras maisuculas text-transform: uppercase; deixa tudo maiusculo e a font-variant: small-caps; elas ficam maiusculas mas discretas */
+    font-variant: small-caps;
+  }
