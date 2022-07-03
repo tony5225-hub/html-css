@@ -19,4 +19,5 @@
   header {
     padding-top: 50px ;/*espaço em cima e duas técnicas novas para deixar letras maisuculas text-transform: uppercase; deixa tudo maiusculo e a font-variant: small-caps; elas ficam maiusculas mas discretas */
     font-variant: small-caps;
+     ;
   }
