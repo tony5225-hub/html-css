@@ -19,5 +19,25 @@
   header {
     padding-top: 50px ;/*espaço em cima e duas técnicas novas para deixar letras maisuculas text-transform: uppercase; deixa tudo maiusculo e a font-variant: small-caps; elas ficam maiusculas mas discretas */
     font-variant: small-caps;
-     ;
+  }
+
+  header {
+    padding-bottom: 50px; /* para deixar o COrdel moderno no cabeça~rio com  50 px para cima e para baixo*/ 
+  }
+
+  header a, footer a{ /*usei a para deixar com cor branca o text-decoration com none tirar o sublinhado e font weight negritar, essa tag  com header a footer é maneira para mostrar que esta sendo modificado no cabeçalho e no ropé os links ao mesmo tempo */
+    color: white ;
+    text-decoration: none ;
+    font-weight: bolder;
+  }
+
+  header a:hover, footer a:hover { /*aqui para quando passar o mouse no link milton duarte ele mostra o sublinhado, essa tag  com header a footer é maneira para mostrar que esta sendo modificado no cabeçalho e no ropé os links ao mesmo tempo */
+    text-decoration: underline;
+  }
+
+  footer { /*centralizar o link no rodapé e por as letras em branco e pasdding 10px dar distaciamento do link.*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
   }
