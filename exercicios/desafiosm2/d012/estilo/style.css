@@ -35,6 +35,32 @@
     text-decoration: underline;
   }
 
+  /*obs: nesta section as configurações de padding e line-height vão servir para todas as sections normal e imagem para distaciamento das septilhas. */
+  section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+  }
+
+
+  /*obs quando colocar a section colocar entre header e footer para que fique no meio assim fica organizado*/
+  section.normal {
+    background-color: white;
+    color: black;
+
+  }
+
+  section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+  }
+
+  section.imagem> p{
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.253);    
+  }
+
   footer { /*centralizar o link no rodapé e por as letras em branco e pasdding 10px dar distaciamento do link.*/
     background-color: black;
     color: white;
