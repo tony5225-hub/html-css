@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-:root {
+:root {/*esse root serve para depois que for aplicar as outras fontes serve como variavel de fontes para incluir*/
   --fonte1: verdana, Geneva, tahoma, sans-serif;
   --fonte2:'Passion One', cursive;
   --fonte3:'Sriracha', cursive;
@@ -17,6 +17,7 @@
   html, body {
     min-height: 100vh;/*tamanho minimo da view hight(visão da altura)*/
     background-color: darkgray;
+    font-family: var(--fonte1);
   }
   /*configurações no header topo do site*/
   header { 
@@ -25,13 +26,15 @@
         text-align: center;
   }
 
-  header {
+  header > h1 {
     padding-top: 50px ;/*espaço em cima e duas técnicas novas para deixar letras maisuculas text-transform: uppercase; deixa tudo maiusculo e a font-variant: small-caps; elas ficam maiusculas mas discretas */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;/*esse recurso (10vw signiifca visão de largura)serve para quando dimunuir ou aumentar no site a letra vai aumentar e diminuir automático (isso é feito pois se deixar no padrão em  quando acessar em celular a letra vai ficar muito grande*/
   }
 
   header {
-    padding-bottom: 50px; /* para deixar o COrdel moderno no cabeça~rio com  50 px para cima e para baixo*/ 
+    padding-bottom: 50px; /* para deixar o COrdel moderno no cabeçario com  50 px para cima e para baixo*/ 
   }
 
   header a, footer a{ /*usei a para deixar com cor branca o text-decoration com none tirar o sublinhado e font weight negritar, essa tag  com header a footer é maneira para mostrar que esta sendo modificado no cabeçalho e no ropé os links ao mesmo tempo */
@@ -45,11 +48,13 @@
   }
 
   /*obs: nesta section as configurações de padding e line-height vão servir para todas as sections normal e imagem para distaciamento das septilhas. */
-  section{
+  section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 5vw;/*esse recurso (10vw signiifca visão de largura)serve para quando diminuir ou aumentar no site a letra vai aumentar e diminuir automático (isso é feito pois se deixar no padrão em  quando acessar em celular a letra vai ficar muito grande*/
   }
 
 
