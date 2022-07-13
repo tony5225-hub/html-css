@@ -72,25 +72,27 @@
   section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /* para colocar uma sombra no box das imagens esses 06px 06px 13px 0px são 06px 06px deslocamento lateral e vertical 13 px de espalhamento e 0px de ampliação e cor Black e colocando mouse emcima diminui a intensidade do black deixando a sombra mais discreta */
+    background-size: cover ;/*esse recurso serve para dar dimunida na imagem */
   }
 
   section.imagem> p{
   display: inline-block; /*aqui utilizou esse display para ser caixa escura  separada  e depois embaixo padding de 5px para as letras não ficarem, coladas na caixa */
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.514);/*essas alterações feitas aqui são todas para o parágrafo do site nas imagens e na sombra que vai ser colocada, altera todas do site*/   
-  text-shadow: 1px 1px 0px black; /*esses 01px 01px 0px são 1px 01px deslocamneto lateral e vertical e 0px de espalhamento e cor Black */
+  text-shadow: 1px 1px 0px black; /*esses 01px 01px 0px são 1px 01px deslocamento lateral e vertical e 0px de espalhamento e cor Black */
   
   }
 
   section#img01 {
     background-image: url('../imagens/background001.jpg') ;
     background-position: right center;
-    background-size: cover ;/*esse recurso serve para dar dimunida na imagem */
+    
   }
 
   section#img02 {
     background-image: url('../imagens/background002.jpg');
-    background-size: cover ;/*esse recurso serve para dar dimunida na imagem */
+   
   }
 
   footer { /*centralizar o link no rodapé e por as letras em branco e pasdding 10px dar distaciamento do link.*/
