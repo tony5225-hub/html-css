@@ -74,6 +74,7 @@
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /* para colocar uma sombra no box das imagens esses 06px 06px 13px 0px são 06px 06px deslocamento lateral e vertical 13 px de espalhamento e 0px de ampliação e cor Black e colocando mouse emcima diminui a intensidade do black deixando a sombra mais discreta */
     background-size: cover ;/*esse recurso serve para dar diminuir a imagem */
+    background-attachment: fixed; /*deixar a imagem fixa quando usar a barra de rolagem vai aparecer fixa efeito parallax simples*/ 
   }
 
   section.imagem> p{
