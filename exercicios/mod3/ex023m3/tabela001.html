@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title> Tabelas</title>
     <style>
         body {
            font-family: Arial, Helvetica, sans-serif; /*font para melhorar aparência*/
@@ -13,6 +13,7 @@
         table {
             width: 400px;/*para deixar com largura de 400 px*/
             border-collapse: collapse;/*para a tabela ficar colado os dados sem separação lado a lado*/
+            border: 2px solid red;/*esta tag para por uma borda na tabela os 5px é espessura se quiser aumentar ou dimunir só mudar o nº*/
         }
         
         tr.linha{
@@ -20,7 +21,10 @@
         }
         td {
             border: 1px solid black;
-            padding:8px /*para distanciar da na tabela*/
+            padding:8px /*para distanciar  na tabela*/
+        }
+        td.dado{
+            background-color: yellow;/*esta tag quando deixa no style dado embaixo vai ficar todas quando colocado Class amarelo(yellow)*/
         }
     </style>
 </head>
@@ -28,15 +32,17 @@
     <h1>Minha Primeira Tabela</h1><!--para criar uma tabela deve ser criado a tag table e as tabelas possuem uma hierarquia simples: Table = tabelas depois table Row = linha de tabela depois Table Header = cabneçalho de tabela depois table data = dados de tabelas -->
     <table>
         <tr><!--aqui é uma forma de fazer tabela de excel exemplicada no começo da aula que é a primeira linha que possui tr(linha) a td dados  e para parecer como a do excel criamos o style (estilo) acima-->
+        <!--<td>A1</td>
+            <td>B1</td>
+            <td>C1</td> OBS NO W3C CONSORCIO HTML5 COLOCA COMO OPICIONAL COMO VAI APARECER ABAIXO O FECHAMENTO SEM PRECISAR DESTE FECHAMENTO </td> E O </tr> NÃO PRECISA E NÃO ALTERA A TABELA NO NAVEGADOR ,MAS COMO CONSELHO DO PROFESSOR DEIXE COMPLETO POIS O VSCODE JA MOSTRA COMPLETO TR QUANDO DIGITA E DA MAIS TRABALHO FICAR APAGANDO--> 
+        </tr><!--primeira linha-->
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
-        </tr>
         <tr class="linha "><!--segunda linha-->
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
+            <td>A2
+            <td>B2
+            <td>C2
         <tr><!--terceira linha-->
             <td>A3</td>
             <td>B3</td>
@@ -44,7 +50,7 @@
         </tr>
         <tr><!--quarta linha-->
             <td>A4</td>
-            <td>B4</td>
+            <td class="dado">B4</td>
             <td>C4</td>
         </tr>
     </table>
