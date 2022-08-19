@@ -12,22 +12,26 @@
 
         table {
             width: 400px;/*para deixar com largura de 400 px*/
-            height: 400px; /*Alinhamento da tabela esse height serve para alinhar vertical no meio da celula e horizontal do lado esquerdo e para deixar horizontal basta colocar no td abaixo  */
+            height: 400px; /* Serve para  Alinhamento da tabela esse height serve para alinhar vertical no meio da celula e horizontal do lado esquerdo celula  */
             border-collapse: collapse;/*para a tabela ficar colado os dados sem separação lado a lado*/
             /*border: 2px solid red;esta tag para por uma borda na tabela os 5px é espessura se quiser aumentar ou dimunir só mudar o nº e por cor*/
         }
         
-        tr.linha{
-            background-color: gray;/*para deixar a linha com a cor que deseja embaixo especificar a class da segunda linha ela A2 cinza } esse comentário esta mostrando exemplo da aula anterior para por uma linha onde  coloca em qualquer lugar na tabela veja no comemtário abaixo onde foi colocado
+        /*tr.linha{
+            background-color: gray;/*para deixar a linha com a cor que deseja embaixo especificar a class da segunda linha ela A2 cinza } esse comentário esta mostrando exemplo da aula anterior para por uma linha onde  coloca em qualquer lugar na tabela veja no comemtário abaixo onde foi colocado */
         
         td {
             border: 1px solid black;
-            padding:8px ;/*para distanciar  na tabela*/
-            text-align:center /*alinha na tabela todo horizontal a esquerda/*
-        
+            padding:8px ;/*para distanciar  na tabela */
+            text-align:center; /*alinha na tabela todo horizontal(Obs:pode alinhar text align:center,right e left) */
+            vertical-align: middle;/*alinha na tabela vertical(Obs:pode alinhar vertical align:top(acima),middle(meio) e bottom (baixo) */
+        }
+        .numero{
+            text-align: right;/*classe que vai ser colocado abaixo no C2 e C3 que serão numeros pois no excel se vc coloca numero ele fica na direita quando o c2 ec3 for representado por numero ficara a direita*/
+        }
         /*td.dado{ 
             background-color: yellow;/*esta tag quando deixa no style dado embaixo vai ficar todas quando colocado Class amarelo(yellow)} esse comentário esta mostrando exemplo da aula anterior para por uma cor onde  coloca  em qualquer lugar na tabela veja no cometário abaixo onde foi colocado*/
-        }
+        
     </style>
 </head>
 <body>
@@ -44,11 +48,11 @@
         <tr ><!--segunda linha esse class="linha " é exemplo que ele tinha dado na aula anterior para por uma classe linha e nesta aula o Guana vai mostrar outro mode fazer-->
             <td>A2
             <td>B2
-            <td>C2
+            <td class="numero">C2
         <tr><!--terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>td>
         </tr>
         <tr><!--quarta linha , esse <td class="dado">B4</td> é exemplo que ele tinha dado na aula anterior para por uma classe e n esta aula o Guana vai mostrar outro mode fazer-->
             <td>A4</td>
