@@ -9,6 +9,21 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        /*esse table indica a tabela com largura width: 500px; e border-collapse: collapse; para deixar a tabela grudada sem espaço só tirar o collapse para ver*/
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        /*essa borda serve para td que é dado mas se por com virgula td,th vai servir para dados e cabeça da tabela e o padding para deixar com mais largura na tabela*/
+        td,th {
+            border: 1px solid black ;
+            padding: 10px;
+        }
+        /*na cabeça e rodapé da tabela uma cor e branco nas palavras*/
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +49,10 @@
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th>Total de Habitantes </th>
+                <td>0000</td>
+            </tr>
         </tfoot>
 
     </table>
