@@ -19,6 +19,12 @@
             border: 1px solid black ;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold; 
+            padding:10px;
+            background-color: brown;
+        }
         /*na cabeça e rodapé da tabela uma cor e branco nas palavras*/
         thead,tfoot{
             background-color: gray;
@@ -32,12 +38,14 @@
 <body>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE(TABELA)
-        THEAD(CABEÇA DA TABELA DENTRO PODE TER: TR,TD,TH)
+        CAPTION(LEGENDA DA TABELA)
+        THEAD(CABEÇA DA TABELA DENTRO PODE TER: TR(linha),TD(dado),TH (titulo))
         TBODY(CORPO DA TABELA DENTRO PODE TER: TR,TD,TH )
         TFOOT(RODAPÉ DA TABELA DENTRO PODE  TER: TR,TD,TH)
     -->
     <h1>Uso de tabelas grandes</h1>
     <table><!--tag para criar uma tabela e abaixo para criar a cabeça corpo e o rodapé(pé) da tabela-->
+        <Caption>População das Unidades Federativas</Caption><!--tag para colocar uma legenda na tabela ou titulo em cima por isso não TR,TD,TH ETC.. OBS:UTLIZANDO DA SEMANTICA (ORDEM DE COLOCAR AS INFORMAÇÕES NA TABELAS OU SITE SE COLOCAR ESSA TAG CAPTION EMBAIXO NA TABELA NO SITE VAI FICAR EM CIMA DO MESMA FORMA.)-->
         <thead>
             <tr><!--mostra a linha-->
                 <th>Estado</th><!--cabeçalho-->
