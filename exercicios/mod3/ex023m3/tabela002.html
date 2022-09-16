@@ -48,8 +48,8 @@
         <Caption>População das Unidades Federativas</Caption><!--tag para colocar uma legenda na tabela ou titulo em cima por isso não TR,TD,TH ETC.. OBS:UTLIZANDO DA SEMANTICA (ORDEM DE COLOCAR AS INFORMAÇÕES NA TABELAS OU SITE SE COLOCAR ESSA TAG CAPTION EMBAIXO NA TABELA NO SITE VAI FICAR EM CIMA DO MESMA FORMA.)-->
         <thead>
             <tr><!--mostra a linha-->
-                <th>Estado</th><!--cabeçalho-->
-                <th>População</th>
+                <th scope="col">Estado</th><!-- o scope para mostrar o titulo de uma coluna cabeçalho-->
+                <th scope="col">População</th>
 
             </tr>
         </thead>
@@ -163,7 +163,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes </th>
+                <th scope="row">Total de Habitantes </th>
                 <td class="num"><strong>213 317 639</strong></td>
             </tr>
         </tfoot>
