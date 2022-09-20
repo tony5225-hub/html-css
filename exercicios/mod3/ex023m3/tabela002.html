@@ -30,6 +30,10 @@
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(2n){ /*inserindo efeito zebrado na tabela coloca-se o tbody > tr:nth-child(2n)que é recurso para deixar a tabela com o efeito esse (2n) significa que de duas em duas linhas é inserido linha cinza e se colocar 3 ou numero que quiser será de acordo a esse numero as linhas cinzas.*/
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;/*alinhar todos os números da tabela*/
         }
@@ -161,7 +165,7 @@
                 <td class="num">652 713</td>
             </tr>
         </tbody>
-        <tfoot>
+        <tfoot>''
             <tr>
                 <th scope="row">Total de Habitantes </th><!--estes row e num são importantes para nos mecanimos de busca melhorar a análise dos dados da tabela!!!-->
                 <td class="num"><strong>213 317 639</strong></td>
