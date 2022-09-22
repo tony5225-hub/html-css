@@ -30,7 +30,10 @@
             background-color: gray;
             color: white;
         }
-        tbody > tr:nth-child(2n){ /*inserindo efeito zebrado na tabela coloca-se o tbody > tr:nth-child(2n)que é recurso para deixar a tabela com o efeito esse (2n) significa que de duas em duas linhas é inserido linha cinza e se colocar 3 ou numero que quiser será de acordo a esse numero as linhas cinzas.*/
+        tbody > tr:nth-child(even){ /*inserindo efeito zebrado na tabela coloca-se o tbody > tr:nth-child(2n)que é recurso para deixar a tabela com o efeito esse (2n) significa que de duas em duas linhas é inserido linha cinza e se colocar 3 ou numero que quiser será de acordo a esse numero as linhas. e pode ser colocado o even(par) e odd (impar) para deixar a cor(white;) na linha par ou na impar modificando por odd ou even */
+            background-color: white;
+        }
+        tbody > tr:nth-child(odd){ /*inserindo efeito zebrado na tabela coloca-se o tbody > tr:nth-child(2n)que é recurso para deixar a tabela com o efeito esse (2n) significa que de duas em duas linhas é inserido linha cinza e se colocar 3 ou numero que quiser será de acordo a esse numero as linhas. e pode ser colocado o even(par) e odd (impar) para deixar a cor(lightgray;) na linha par ou na impar modificando por odd ou even */
             background-color: lightgray;
         }
 
