@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*efeito comportamental da tabela para usar efeito abaixo de congelamento*/
         }
         /*essa borda serve para td que é dado mas se por com virgula td,th vai servir para dados e cabeça da tabela e o padding para deixar com mais largura na tabela*/
         td,th {
@@ -27,9 +28,16 @@
         }
         /*na cabeça e rodapé da tabela uma cor e branco nas palavras*/
         thead,tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
+
+        thead > tr > th {  /*aqui esse comando é o th que esta dentro de tr que esta dentro de thead no htlm vai usar o "posiyion sticky e top -1" para colar o titulo tipo congelar do excel*/
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
         tbody > tr:nth-child(even){ /*inserindo efeito zebrado na tabela coloca-se o tbody > tr:nth-child(2n)que é recurso para deixar a tabela com o efeito esse (2n) significa que de duas em duas linhas é inserido linha cinza e se colocar 3 ou numero que quiser será de acordo a esse numero as linhas. e pode ser colocado o even(par) e odd (impar) para deixar a cor(white;) na linha par ou na impar modificando por odd ou even */
             background-color: white;
         }
@@ -50,7 +58,7 @@
         TBODY(CORPO DA TABELA DENTRO PODE TER: TR,TD,TH )
         TFOOT(RODAPÉ DA TABELA DENTRO PODE  TER: TR,TD,TH)
     -->
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Uso de Tabelas Grandes</h1>
     <table><!--tag para criar uma tabela e abaixo para criar a cabeça corpo e o rodapé(pé) da tabela-->
         <Caption>População das Unidades Federativas</Caption><!--tag para colocar uma legenda na tabela ou titulo em cima por isso não TR,TD,TH ETC.. OBS:UTLIZANDO DA SEMANTICA (ORDEM DE COLOCAR AS INFORMAÇÕES NA TABELAS OU SITE SE COLOCAR ESSA TAG CAPTION EMBAIXO NA TABELA NO SITE VAI FICAR EM CIMA DO MESMA FORMA.)-->
         <thead>
@@ -176,6 +184,6 @@
         </tfoot>
 
     </table>
-    
+       
 </body>
 </html>
