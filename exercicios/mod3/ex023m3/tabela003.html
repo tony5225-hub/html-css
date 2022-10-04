@@ -27,26 +27,28 @@
     <table> <!--aqui é criando a base de tabela e quatro linhas (tr) tres celulas (td)-->
         <tr>
             <td>A</td>
-            <td colspan="2">B</td> <!--comando serve para mesclar a outra coluna e não a linha-->
+            <td colspan="2">B</td> <!--comando serve para mesclar a outra coluna e não a linha o numero 2 serve para expandir 02 colunas-->
             
         </tr>
 
         <tr>
-            <td>D</td>
+            <td rowspan="3">D</td><!--comando serve para mesclar a  linha o numero 3 serve para expandir 02 linhas pois o G e J foram tirado da tabela-->
+            
             <td>E</td>
-            <td rowspan="3">F</td><!--comando serve para mesclar a linha-->
+            <td rowspan="2">F</td><!--aqui é para o F ocupar 2 linhas pois a Letra I foi tirada duas linhas-->
+            
         </tr>
 
         <tr>
             
             <td>H</td>
-            <td>I</td>
+            
         </tr>
 
         <tr>
             
-            <td>L</td>
-            <td>M</td>
+            
+            <td colspan="2">M</td><!--aqui é para o M ocupar 2 colunas pois a Letra I foi tirada duas colunas-->
         </tr>
     </table>
 </body>
