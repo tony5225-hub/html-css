@@ -18,7 +18,7 @@
             padding: 10px;
         }
         th, td{
-            border: 1px /*para criar a borda no grupo nomes etc*/solid darkgray; /*par aumentar o tamanho que circunda a Borda*/
+            border: 1px /*para criar a borda no grupo nomes etc*/solid darkgray; /*para aumentar o tamanho que circunda a Borda*/
             padding: 10px;
             
 
@@ -33,11 +33,17 @@
     </caption>
     <thead>
         <tr> <!--tr linhas -->
-            <th>Grupos</th>
+            <th scope="col">Grupos</th><!--este scope esta em colunas serve  para mostrar o titulo de uma coluna cabeçalho-->
             <th>Nomes</th>
             <th colspan="3">Filmes</th> <!--aqui quando vc coloca colspan ele não modifica no site mas porque não colocou dados que faltam embaixo na tabela -->
         </tr>
     </thead>
+    <tfoot>
+        <tr>
+            <th colspan="4">Total</th>
+            <td>1000</td>
+        </tr>
+    </tfoot>
     <tbody>
         <tr><!--aqui é a linha que vai ser escrito no corpo o restante da tabela Mulheres etc que vai ser o th-->
             <th rowspan="3">Muheres</th><!--  colocar rowspan para expandir Mulheres não vai aparecer só quando colocar tr (LINHA)Beatriz, OBS sempre que colocar th tem que por scopo-->
@@ -68,6 +74,14 @@
        <tr>
         <td>Daniel Lourenço</td>
         <td>Wall-E</td>
+        <td>Oldboy </td>
+        <td>Dangal</td>
+       </tr>
+       <tr>
+        <td>Fabiano Mota</td>
+        <td>Star Wars</td>
+        <td>Taxi Driver</td>
+        <td>Toy Story</td>
        </tr>
         
 
