@@ -33,20 +33,20 @@
     </caption>
     <thead>
         <tr> <!--tr linhas -->
-            <th scope="col">Grupos</th><!--este scope esta em colunas serve  para mostrar o titulo de uma coluna cabeçalho-->
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th> <!--aqui quando vc coloca colspan ele não modifica no site mas porque não colocou dados que faltam embaixo na tabela -->
+            <th scope="col">Grupos</th><!--este scope esta em colunas serve  para mostrar o titulo de uma coluna cabeçalho e é utilizado nas ths-->
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th> <!--aqui quando vc coloca colspan ele não modifica no site enquanto não colocar os dados que faltam embaixo na tabela e o scopecolgroup utilizar em mesclagens e expansões no casos em filmes-->
         </tr>
     </thead>
     <tfoot>
         <tr>
-            <th colspan="4">Total</th>
+            <th colspan="4" scope="row">Total</th>
             <td>1000</td>
         </tr>
     </tfoot>
     <tbody>
         <tr><!--aqui é a linha que vai ser escrito no corpo o restante da tabela Mulheres etc que vai ser o th-->
-            <th rowspan="3">Muheres</th><!--  colocar rowspan para expandir Mulheres não vai aparecer só quando colocar tr (LINHA)Beatriz, OBS sempre que colocar th tem que por scopo-->
+            <th rowspan="3" scope="rowgroup">Muheres</th><!-- colocar rowspan para expandir Mulheres não vai aparecer só quando colocar tr (LINHA)Beatriz, OBS sempre que colocar th tem que por scopo e o scoperowgroup utilizar em mesclagens e expansões no casos em Mulheres-->
             <td>Ana Maria Santos</td><!--isso é para ir colocando os nomes do lado da da planilha-->
             <td>Allien</td>
             <td>Rambo</td>
@@ -65,7 +65,7 @@
             <td>Big Hero</td>
        </tr>
        <tr>
-        <th rowspan="3">Homens</th>
+        <th rowspan="3" scope="rowgroup">Homens</th> <!-- colocar rowspan para expandir Homens não vai aparecer só quando colocar tr (LINHA)Bruno Mendonça, OBS sempre que colocar th tem que por scopo e o scoperowgroup utilizar em mesclagens e expansões no casos em Homens -->
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
