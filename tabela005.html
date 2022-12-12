@@ -24,14 +24,36 @@
             padding: 8px;
         }
         tr.destaque {
-            background-color: blueviolet; /*o ajuste do css para dar cor na linha */
+            background-color: darkgoldenrod; /*o ajuste do css para dar cor na linha */
+        }
+        col.cnome {
+            background-color: aqua;
+        }
+        /*col.csexo,col.cidade { dar cor na coluna sexo e se quiser em outra colocar virgula e colocar col.cidade e embaixo exemplo colgroup span para especificar sem fazer exemplo acima. 
+            background-color: yellow;
+        }
+        */
+        col.cgrupo{
+            background-color: red; /*exemplificar as colunas em vermelho e se quiser embaixo tira 
+            <col class="cidade">e acrescenta
+             3 span no lugar de 2 e fica tudo vermelho
+            <col class="cgrupo"span="2">
+            */
         }
 
+
+        
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
+        <colgroup><!--esse colgroup vai servir para colocar cor em várias colunas da tabela conforme as classes abaixo  e acima no css colocar para aparecer-->
+            <col class="cnome">
+            <col class="cgrupo"span="3">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -39,7 +61,7 @@
             <th scope="col">Idade</th>
             <th scope="col">Profissão</th>
         </tr>
-        <tr class="destaque"><!--exemplo como poem uma cor na linha-->
+        <tr>
             <td>Ana Luiza</td>
             <td>F</td>
             <td>25</td>
@@ -47,7 +69,7 @@
         </tr>
    
         <tr>
-            <td>Cláudio</td>
+            <td >Cláudio</td>
             <td>M</td>
             <td>28</td>
             <td>Programador</td>
@@ -74,7 +96,7 @@
             <td>Médica</td>
         </tr> 
             
-        <tr>
+        <tr class="destaque"><!--exemplo como poem uma cor na linha-->>
             <td>Otavio</td>
             <td>M</td>
             <td>22</td>
