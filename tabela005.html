@@ -29,30 +29,41 @@
         col.cnome {
             background-color: aqua;
         }
+        .amarelo{ /*efeito zebrado*/
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
         /*col.csexo,col.cidade { dar cor na coluna sexo e se quiser em outra colocar virgula e colocar col.cidade e embaixo exemplo colgroup span para especificar sem fazer exemplo acima. 
             background-color: yellow;
         }
         */
-        col.cgrupo{
-            background-color: red; /*exemplificar as colunas em vermelho e se quiser embaixo tira 
+        /*col.cgrupo{
+            background-color: red; exemplificar as colunas em vermelho e se quiser embaixo tira 
             <col class="cidade">e acrescenta
              3 span no lugar de 2 e fica tudo vermelho
             <col class="cgrupo"span="2">
-            */
-        }
+            OBS: AQUI SE EU TIRAR O COMENTARIO AS COLUNAS SEXO IDADE PROFISSÃO VÃO FICAR VERMELHA , MAS VOU FAZER ZEBRADO NO EXEMPLO ABAIXO E COLOCANDO ACIMA  COL.NOME E ABAIXO DEPOIS DE COLGROUP EXEMPLO ZEBRADO 
+        }*/
 
-
-        
+                
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
-        <colgroup><!--esse colgroup vai servir para colocar cor em várias colunas da tabela conforme as classes abaixo  e acima no css colocar para aparecer-->
+        <!--<colgroup>esse 1º exemplo colgroup vai servir para colocar cor em várias colunas da tabela conforme as classes abaixo  e acima no css colocar para aparecer
             <col class="cnome">
             <col class="cgrupo"span="3">
             <col class="cidade">
             <col class="cprof">
+        </colgroup> -->
+        <colgroup><!--2ºexemplo o zebrado alinha debaixo marrom é exemplo de linha não levar em consideração tirando essa linha na onde esta esse exemplo a planilha fica toda amarela e vermelho zebrado-->
+            <col class="amarelo">
+            <col class="vermelho" span="2"><!--aqui 3ºexemplo posso por tirando uma col amarelo deixar duas col vermelho e amarelo colocando o span com 2 colunas-->
+            <col class="amarelo">
+            
         </colgroup>
         <caption>Cadastro</caption>
         <tr>
